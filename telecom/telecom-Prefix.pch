@@ -1,0 +1,60 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated"
+#pragma clang diagnostic ignored "-Wunused-value"
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+
+#import "defines.h"
+#import "utils.h"
+#import "NetService.h"
+#import "Categorys.h"
+#import "plist.h"
+#import "UIFactory.h"
+#import "CrashReport.h"
+#import "MyUtil.h"
+#import "Const.h"
+#import "IQKeyboardManager.h"
+
+#import "UIViewController+AllView.h"
+#import "UnityLHClass.h"
+#import "DataHander.h"
+#import "UIImageView+WebCache.h"
+
+#import<SystemConfiguration/SystemConfiguration.h>
+#import<MobileCoreServices/MobileCoreServices.h>
+#import "AFHTTPRequestOperationManager.h"
+
+#import "DoNothingViewController.h"
+#import "OnDutyLog.h"
+#import "MyWorkViewController.h"
+#import "MyRepairFaultListKB.h"
+#import "MyBookingAdd.h"
+#import "MyBookingAddXcsg.h"
+#import "MyResources.h"
+#import "MyEngineRoom.h"
+#import "MyBookingList2.h"
+#import "WirelessNetManage.h"
+#import "EponInfoViewController.h"
+#import "FaultDirectSearchController.h"
+#import "CableConnectorInfoController.h"
+#import "MyRepairFaultDetailKB.h"
+#import "fashion.h"
+#import "UIView+MJ.h"
+
+#define Login @""
+#endif

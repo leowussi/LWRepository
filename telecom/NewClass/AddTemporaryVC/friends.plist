@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>friends</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>复旦大学本部</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦校园网</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦生活园</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>附近局站</string>
+	</dict>
+	<dict>
+		<key>friends</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>复旦大学本部</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦校园网</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦生活园</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>曾用局站</string>
+	</dict>
+	<dict>
+		<key>friends</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>复旦大学本部</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦校园网</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>复旦生活园</string>
+			</dict>
+		</array>
+		<key>name</key>
+		<string>匹配局站</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeoSearchResultCtrl">
+            <connections>
+                <outlet property="resultTableView" destination="nXy-mW-PLz" id="0k2-Mk-DHo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nXy-mW-PLz">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ELc-UG-Xzf"/>
+                        <outlet property="delegate" destination="-1" id="7yc-ck-3Zd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nXy-mW-PLz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Ke-RW-RUn"/>
+                <constraint firstAttribute="bottom" secondItem="nXy-mW-PLz" secondAttribute="bottom" id="Ojd-RB-3vM"/>
+                <constraint firstAttribute="trailing" secondItem="nXy-mW-PLz" secondAttribute="trailing" id="d7B-VB-2c6"/>
+                <constraint firstItem="nXy-mW-PLz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="lcw-d3-rgW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="302" y="254"/>
+        </view>
+    </objects>
+</document>

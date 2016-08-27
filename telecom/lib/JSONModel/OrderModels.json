@@ -1,0 +1,16 @@
+{
+  "order_id" : 104,
+  "products" : [
+    {
+      "id" : "123",
+      "name" : "Product #1",
+      "price" : 12.95
+    },
+    {
+      "id" : "137",
+      "name" : "Product #2",
+      "price" : 82.95
+    }
+  ],
+  "total_price" : 13.45
+}

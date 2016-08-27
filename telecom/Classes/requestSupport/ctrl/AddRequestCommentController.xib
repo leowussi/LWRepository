@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRequestCommentController">
+            <connections>
+                <outlet property="rateView" destination="gIG-if-u51" id="0Bk-Q6-x8V"/>
+                <outlet property="scroll" destination="mqB-SK-PKV" id="xUL-z6-igm"/>
+                <outlet property="textView" destination="57S-0j-8LK" id="0cP-9S-377"/>
+                <outlet property="uploadBtn" destination="SDU-2L-t9r" id="dy0-8b-jNI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-SK-PKV">
+                    <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点评描述：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI8-mj-dOb">
+                            <rect key="frame" x="10" y="115" width="60" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="YC3-Kz-1Fg"/>
+                                <constraint firstAttribute="width" constant="60" id="Zn3-XJ-rYV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请输入描述..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="57S-0j-8LK">
+                            <rect key="frame" x="75" y="115" width="200" height="100"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="ghG-h0-uiU"/>
+                                <constraint firstAttribute="height" constant="100" id="z6p-9u-RRe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-2L-t9r" userLabel="uploadBtn">
+                            <rect key="frame" x="10" y="225" width="60" height="60"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="tFt-p1-PQg"/>
+                                <constraint firstAttribute="height" constant="60" id="vIX-1P-oDi"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="upload_btn.png"/>
+                            <connections>
+                                <action selector="uploadFileAction:" destination="-1" eventType="touchUpInside" id="wgH-1a-9hp"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIG-if-u51" userLabel="rateView">
+                            <rect key="frame" x="10" y="5" width="300" height="100"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="50W-gC-r8K"/>
+                                <constraint firstAttribute="width" constant="300" id="sdK-iJ-DSW"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-mu-xL3">
+                            <rect key="frame" x="210" y="356" width="60" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Gek-dR-sUx"/>
+                                <constraint firstAttribute="height" constant="30" id="iTy-LH-jrQ"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelActon:" destination="-1" eventType="touchUpInside" id="sGV-86-oKA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDg-a3-oWo">
+                            <rect key="frame" x="50" y="356" width="60" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="GpC-oh-vgW"/>
+                                <constraint firstAttribute="height" constant="30" id="bho-bD-J2G"/>
+                            </constraints>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="yesAction:" destination="-1" eventType="touchUpInside" id="H5p-Z0-r1J"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="SDU-2L-t9r" firstAttribute="leading" secondItem="gIG-if-u51" secondAttribute="leading" id="1Fx-1e-hSw"/>
+                        <constraint firstAttribute="bottom" secondItem="gIG-if-u51" secondAttribute="bottom" constant="303" id="1hi-e9-HOa"/>
+                        <constraint firstItem="yDg-a3-oWo" firstAttribute="top" secondItem="SDU-2L-t9r" secondAttribute="bottom" constant="69" id="4nB-W7-WuA"/>
+                        <constraint firstItem="57S-0j-8LK" firstAttribute="top" secondItem="LI8-mj-dOb" secondAttribute="top" id="6PW-Bc-plH"/>
+                        <constraint firstItem="gIG-if-u51" firstAttribute="top" secondItem="mqB-SK-PKV" secondAttribute="top" constant="5" id="8vc-JD-VdL"/>
+                        <constraint firstItem="SDU-2L-t9r" firstAttribute="top" secondItem="57S-0j-8LK" secondAttribute="bottom" constant="10" id="HCW-sN-Szn"/>
+                        <constraint firstItem="uhc-mu-xL3" firstAttribute="centerX" secondItem="mqB-SK-PKV" secondAttribute="centerX" constant="80" id="NvP-Xr-79I"/>
+                        <constraint firstItem="57S-0j-8LK" firstAttribute="leading" secondItem="LI8-mj-dOb" secondAttribute="trailing" constant="5" id="QoA-uD-RhU"/>
+                        <constraint firstAttribute="trailing" secondItem="gIG-if-u51" secondAttribute="trailing" constant="10" id="Rfm-d8-QcE"/>
+                        <constraint firstAttribute="bottom" secondItem="uhc-mu-xL3" secondAttribute="bottom" constant="20" id="ULA-Ir-3my"/>
+                        <constraint firstItem="gIG-if-u51" firstAttribute="leading" secondItem="mqB-SK-PKV" secondAttribute="leading" constant="10" id="VG6-9r-8oc"/>
+                        <constraint firstItem="LI8-mj-dOb" firstAttribute="top" secondItem="gIG-if-u51" secondAttribute="bottom" constant="10" id="aog-gJ-WcX"/>
+                        <constraint firstItem="LI8-mj-dOb" firstAttribute="leading" secondItem="gIG-if-u51" secondAttribute="leading" id="esr-Oo-FQ5"/>
+                        <constraint firstAttribute="bottom" secondItem="yDg-a3-oWo" secondAttribute="bottom" constant="20" id="hKA-ED-IAy"/>
+                        <constraint firstItem="yDg-a3-oWo" firstAttribute="centerX" secondItem="mqB-SK-PKV" secondAttribute="centerX" constant="-80" id="nly-nl-V13"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1hi-e9-HOa"/>
+                            <exclude reference="4nB-W7-WuA"/>
+                            <exclude reference="hKA-ED-IAy"/>
+                            <exclude reference="ULA-Ir-3my"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yDg-a3-oWo" secondAttribute="bottom" constant="30" id="B7c-b8-x1z"/>
+                <constraint firstItem="mqB-SK-PKV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="700" id="Bfy-TJ-8Hk"/>
+                <constraint firstItem="mqB-SK-PKV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DDb-hO-q3m"/>
+                <constraint firstAttribute="bottom" secondItem="mqB-SK-PKV" secondAttribute="bottom" id="Waa-qt-hIJ"/>
+                <constraint firstAttribute="bottom" secondItem="uhc-mu-xL3" secondAttribute="bottom" constant="30" id="con-KH-bAE"/>
+                <constraint firstItem="mqB-SK-PKV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="iP9-Ga-SSz"/>
+                <constraint firstAttribute="trailing" secondItem="mqB-SK-PKV" secondAttribute="trailing" id="nct-ms-Ft5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Bfy-TJ-8Hk"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="267" y="352"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="upload_btn.png" width="144" height="115"/>
+    </resources>
+</document>
