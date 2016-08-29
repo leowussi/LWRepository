@@ -1,0 +1,30 @@
+{
+"More": false,
+"Form": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<Form name=\"appview_historytask\" entity=\"new_ceshi\" >
+    <Group name=\"常规\" id=\"1\" >
+        <Cols>
+            <ColsKey>new_name</ColsKey>
+            <ColsGroup>常规</ColsGroup>
+            <ColsType>string</ColsType>
+            <ColsName>名称</ColsName>
+            <ColsEdit>1</ColsEdit>
+        </Cols>
+        <Cols>
+            <ColsKey>new_lookup</ColsKey>
+            <ColsGroup>常规</ColsGroup>
+            <ColsType>lookup</ColsType>
+            <ColsName>new_lookup</ColsName>
+            <ColsEdit>1</ColsEdit>
+            <Form>appview_account</Form>
+        </Cols>
+        <Cols>
+            <ColsKey>new_datetime_time</ColsKey>
+            <ColsGroup>常规</ColsGroup>
+            <ColsType>datetime</ColsType>
+            <ColsName>datetime_time</ColsName>
+            <ColsEdit>1</ColsEdit>
+        </Cols>
+    </Group >
+</Form>"
+}

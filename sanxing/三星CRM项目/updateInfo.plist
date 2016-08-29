@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>1、修复台区部分采集率成功率不显示</string>
+	<string>2、运维派工地图改为百度地图，并新增调用百度地图导航</string>
+	<string>3、工作日志明错误提示修复</string>
+	<string>4、支持ios9</string>
+</array>
+</plist>

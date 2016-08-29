@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nm3-Pq-Xw0">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nm3-Pq-Xw0" secondAttribute="trailing" id="8R7-19-1bH"/>
+                <constraint firstItem="nm3-Pq-Xw0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CPj-cA-wZX"/>
+                <constraint firstItem="nm3-Pq-Xw0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HIp-V5-7r5"/>
+                <constraint firstAttribute="bottom" secondItem="nm3-Pq-Xw0" secondAttribute="bottom" id="jjj-qU-6yK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="249" y="453"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launchImage.jpg" width="640" height="1136"/>
+    </resources>
+</document>

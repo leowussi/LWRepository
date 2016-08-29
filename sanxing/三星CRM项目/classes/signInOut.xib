@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RO5-Fk-7qk" customClass="SignInOutView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SD3-d7-SC5">
+                    <rect key="frame" x="35" y="84" width="70" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="1Y9-4M-ePH"/>
+                        <constraint firstAttribute="height" constant="38" id="IIY-B9-kZh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lko-RR-dsT">
+                    <rect key="frame" x="113" y="84" width="114" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="Vs1-V5-Uba"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提醒：请尽量于工作日早上7:30 到8:30签到，下午5:00到5:30签退，逾时或早退可能会影响到您到绩效。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1v-wf-Q3q">
+                    <rect key="frame" x="35" y="130" width="238" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="DYQ-3Z-6vi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签到成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t41-S6-39L">
+                    <rect key="frame" x="35" y="230" width="250" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MZm-eq-Shw"/>
+                        <constraint firstAttribute="width" constant="250" id="Zkt-8R-BXZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="签退成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-Wh-TJ0">
+                    <rect key="frame" x="35" y="270" width="250" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BrN-dI-lt8"/>
+                        <constraint firstAttribute="width" constant="250" id="VWO-EI-d1W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="sxM-Wh-TJ0" secondAttribute="centerX" id="D8m-Tk-ibM"/>
+                <constraint firstAttribute="trailing" secondItem="u1v-wf-Q3q" secondAttribute="trailing" constant="47" id="O7T-Mx-W0B"/>
+                <constraint firstItem="SD3-d7-SC5" firstAttribute="leading" secondItem="u1v-wf-Q3q" secondAttribute="leading" id="UAS-yG-me3"/>
+                <constraint firstItem="SD3-d7-SC5" firstAttribute="leading" secondItem="RO5-Fk-7qk" secondAttribute="leading" constant="35" id="W7l-xb-ykY"/>
+                <constraint firstItem="lko-RR-dsT" firstAttribute="height" secondItem="SD3-d7-SC5" secondAttribute="height" id="XYt-0b-Qiq"/>
+                <constraint firstItem="SD3-d7-SC5" firstAttribute="top" secondItem="RO5-Fk-7qk" secondAttribute="top" constant="84" id="ceu-kk-rWu"/>
+                <constraint firstAttribute="centerX" secondItem="t41-S6-39L" secondAttribute="centerX" id="dmr-xA-ngV"/>
+                <constraint firstItem="lko-RR-dsT" firstAttribute="leading" secondItem="SD3-d7-SC5" secondAttribute="trailing" constant="8" id="gGG-Km-KGp"/>
+                <constraint firstItem="sxM-Wh-TJ0" firstAttribute="top" secondItem="t41-S6-39L" secondAttribute="bottom" id="iNg-vI-5vx"/>
+                <constraint firstItem="u1v-wf-Q3q" firstAttribute="top" secondItem="lko-RR-dsT" secondAttribute="bottom" constant="8" id="nXF-Ha-0ld"/>
+                <constraint firstItem="t41-S6-39L" firstAttribute="top" secondItem="u1v-wf-Q3q" secondAttribute="bottom" constant="15" id="sBz-zh-7eY"/>
+                <constraint firstItem="lko-RR-dsT" firstAttribute="top" secondItem="SD3-d7-SC5" secondAttribute="top" id="wgR-lz-iID"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="lko-RR-dsT" id="0mx-3t-k3r"/>
+                <outlet property="signInStatusLabel" destination="t41-S6-39L" id="PLL-eC-kAf"/>
+                <outlet property="signOutStatusLabel" destination="sxM-Wh-TJ0" id="bXo-te-jyD"/>
+            </connections>
+            <point key="canvasLocation" x="773" y="383"/>
+        </view>
+    </objects>
+</document>
